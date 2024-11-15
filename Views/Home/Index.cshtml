@@ -1,0 +1,157 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+  
+  .form-label{
+    font-weight: 600;
+    color: #0F204B;
+  }
+
+  hr{
+    border: 1px solid #A71930;
+  }
+
+</style>
+
+<div class="container">
+
+    <div class="mt-3 mb-2">
+      <h3 class="fs-3 fw-600 text-center" style="color:#0F204B;">Digitalisation Funding Application</h3>
+      <hr />
+    </div>
+
+    <form class="row g-3">
+
+      <!-- 0 -->
+      <div class="col-md-12">
+        <label for="" class="form-label fs-5  ">Plan/Project name</label>
+        <input type="text" class="form-control" placeholder="Plan/Project name" id="">
+      </div>
+
+      <!-- 1 -->
+      <div class="col-md-12">
+        <label for="" class="form-label fs-5 ">Plan custodian / responsible person</label>
+        <div class="row">            
+            
+            <div class="col-md-6">
+              <label for="" class="form-label fs-5  ">Name</label>
+              <input type="text" class="form-control" placeholder="Name" id="">
+            </div>
+            <div class="col-md-6">
+              <label for="" class="form-label fs-5  ">Position</label>
+              <input type="text" class="form-control" placeholder="Position" id="">
+            </div>
+
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="col-md-12">
+        <label for="" class="form-label fs-5">Plan KPIs</label>
+        <input type="text" class="form-control" placeholder="Plan KPIs" id="">
+      </div>
+    
+      <!-- 3 -->
+      <div class="col-md-12">
+          <label for="" class="form-label fs-5">Intended Beneficiaries</label>
+          <input type="text" class="form-control" placeholder="Intended Beneficiaries" id="inputPassword4">
+      </div>
+
+      <!-- 4 -->
+      <div class="col-md-12">
+          
+          <label for="" class="form-label fs-5  ">Was funding received for other projects</label>
+          <div>
+              <label class="form-check">
+                  <input
+                      class="form-check-input"
+                      type="radio"
+                      value="True"  
+                      name="radioYesNo"                                                     
+                      for=""/>
+                  <span class="form-check-label">
+                      Yes
+                  </span>
+              </label>
+              <label class="form-check">
+                  <input
+                      class="form-check-input"
+                      type="radio"
+                      value="False"
+                      name="radioYesNo" 
+                      for="" />
+                  <span class="form-check-label">
+                      No
+                  </span>
+              </label>                                                
+          </div>
+
+      </div>
+
+      <!-- 4 -->
+      <div class="col-md-12">
+        <label for="" class="form-label fs-5">Budget</label>
+        <input type="number" class="form-control" id="" placeholder="R0,00">
+      </div>
+
+      <!-- 5 -->
+      <div class="col-md-12">
+        <label for="" class="form-label fs-5">Project Scope</label>
+        <input type="text" class="form-control" id="" placeholder="Project Scope">
+      </div>
+
+      <!-- 6 -->
+      <div class="col-md-12">
+        <label for="" class="form-label fs-5  ">Objectives</label>
+        <textarea col="3" row="3" type="text" class="form-control" id="" placeholder="Objectives"></textarea>
+      </div>
+
+      <!-- 7 -->
+      <div class="col-md-12">
+        <label for="" class="form-label fs-5  ">Expected Outcomes</label>
+        <textarea col="3" row="3" type="text" class="form-control" id="inputAddress2" placeholder="Expected Outcomes"></textarea>
+      </div>
+
+      <!--  -->
+      <div class="col-md-12">
+        <label for="" class="form-label fs-5 ">Project Date</label>
+        <div class="row">            
+            
+            <div class="col-md-6">
+              <label for="" class="form-label fs-5  ">Start Date</label>
+              <input type="date" class="form-control" id="">
+            </div>
+            <div class="col-md-6">
+              <label for="" class="form-label fs-5  ">End Date</label>
+              <input type="date" class="form-control" id="">
+            </div>
+
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="col-md-12">
+        <label for="" class="form-label fs-5  ">Funding Requirements (Budget Breakdown)</label>
+        <textarea type="text" class="form-control" id="" placeholder="Funding Requirements (Budget Breakdown)"></textarea>
+      </div>
+
+      <!-- 10 -->
+      <div class="col-md-12">
+        <label for="" class="form-label fs-5  ">Faculty/Department</label>
+        <select id="" class="form-select">
+          <option selected>Please select a faculty</option>
+          <option>Education</option>
+          <option>Health Science</option>
+          <option>Humanities</option>
+        </select>
+      </div>
+
+      <div class="col-md-12 mt-1">
+        <button class="btn btn-md btn-primary my-2" style="background-color:#0F204B;" type="submit">Submit</button>
+        <button class="btn btn-md btn-danger mx-3 my-2" style="background-color:#A71930;" type="submit">Cancel</button>
+      </div>
+
+    </form>
+</div>
