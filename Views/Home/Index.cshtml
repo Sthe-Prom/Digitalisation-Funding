@@ -13,190 +13,294 @@
     border: 1px solid #A71930;
   }
 
+  .center_c{
+    margin: 0;
+    float: none;
+  }
+
+  .side_c{
+      padding-left:10px;
+  }
+
+  #newMember {
+    display: none; /* Initially hidden */
+  }
+
 </style>
 
-<div class="container">
+<div class="container" style="background-color:#fafafa !important;">
 
-    <div class="mt-3 mb-2">
+    <div class="mb-2">
       <h3 class="fs-3 fw-600 text-center" style="color:#0F204B;">Digitalisation Funding Application</h3>
       <hr />
     </div>
 
-    <form class="row g-3">
+    <form class="row" style="background-color:#fff">
 
+      <!-- Personal -->
       <div style="border:1px solid lightgrey;padding: 15px;border-radius: 12px;border-bottom: 0px;">
 
           <label for="" style="color: #A71930;" class="form-label fs-5">Personal Details</label>
           
-          <!-- 0 -->
-          <div class="col-md-12">
-            <label for="" class="form-label fs-5  ">Project title</label>
-            <input type="text" class="form-control" placeholder="Project title" id="">
-          </div>
-
           <!-- 1 -->
-          <div class="col-md-12 mt-3">
+          <div class="col-md-12 mt-3 mb-5">
               
               <label for="" class="form-label fs-5 ">Applicant Details</label>
-           
-              <div class="container">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <label for="" class="form-label">First Name:</label>
-                      <input type="text" class="form-control" placeholder="Name" id="">
+                         
+              <div class="row side_c" >
+                <div class="col-md-4">
+                  <label for="" class="form-label">First Name:</label>
+                  <input type="text" class="form-control" placeholder="First Name" id="">
+                </div>
+                <div class="col-md-4">
+                  <label for="" class="form-label">Last Name:</label>
+                  <input type="text" class="form-control" placeholder="Last Name" id="">
+                </div>
+                <div class="col-md-4">
+                  <label for="" class="form-label">Position:</label>
+                  <input type="text" class="form-control" placeholder="Position" id="">
+                </div>
+                <br />
+                <div class="col-md-6 mt-3">
+                  <label for="" class="form-label">Email:</label>
+                  <input type="email" class="form-control" placeholder="Email" id="">
+                </div>
+                <div class="col-md-6 mt-3">
+                  <label for="" class="form-label">Contact Number:</label>
+                  <input type="number" class="form-control" placeholder="Contact Number" id="">
+                </div>
+                <br />
+                <div class="col-md-12 mt-3">
+                    
+                    <label for="" class="form-label">Faculty / Support Department</label>                   
+                  
+                    <div class="col-sm">
+                      <select id="" class="form-select">
+                        <option selected>Please select</option>
+                        <option>Education</option>
+                        <option>Faculty of Health Sciences</option>
+                        <option>Theology and Religion</option>
+                        <option>The Humanities</option>
+                        <option>Economic and Management Sciences</option>
+                        <option>Law</option>
+                        <option>Natural and Agricultural Sciences</option>
+                      </select>
                     </div>
-                    <div class="col-md-4">
-                      <label for="" class="form-label">Last Name:</label>
-                      <input type="text" class="form-control" placeholder="Last Name" id="">
-                    </div>
-                    <div class="col-md-4">
-                      <label for="" class="form-label">Position:</label>
-                      <input type="text" class="form-control" placeholder="Position" id="">
-                    </div>
-                    <br />
-                    <div class="col-md-6 mt-3">
-                      <label for="" class="form-label">Email:</label>
-                      <input type="email" class="form-control" placeholder="Email" id="">
-                    </div>
-                    <div class="col-md-6 mt-3">
-                      <label for="" class="form-label">Contact Number:</label>
-                      <input type="number" class="form-control" placeholder="Contact Number" id="">
-                    </div>
-                  </div>
-              </div>
+                                      
+                </div>
+                <br />
+
+                
+
+              </div>          
                
           </div>
 
-          <!-- 10 -->
-          <div class="col-md-12 mt-3">
-            <label for="" class="form-label fs-5  ">Faculty / Support Department</label>
-            <select id="" class="form-select">
-              <option selected>Please select</option>
-              <option>Education</option>
-              <option>Faculty of Health Sciences</option>
-              <option>Theology and Religion</option>
-              <option>The Humanities</option>
-              <option>Economic and Management Sciences</option>
-              <option>Law</option>
-              <option>Natural and Agricultural Sciences</option>
-            </select>
-          </div>
-
+        
       </div>
 
-      <div style="border:1px solid lightgrey;padding: 15px;border-radius: 12px;border-top: 0px;">
+      <!-- Project -->
+      <div style="border:1px solid lightgrey;padding: 15px;border-radius: 12px;border-top: 0px;border-bottom: 0px;margin-top:10px;">
 
-          <label for="" style="color: #A71930;" class="form-label fs-5">Project Details</label>
-          <!-- 3 -->
-          <div class="col-md-12 mt-1">
-              <label for="" class="form-label fs-5">Intended Beneficiaries</label>
-              <textarea type="text" col="3" row="3" class="form-control" id="" placeholder="Intended Beneficiaries"></textarea>              
-          </div>
-
-          <!-- 4 -->
-          <div class="col-md-12 mt-1">              
-              <label for="" class="form-label fs-5  ">Was funding received for other projects</label>
-              <div>
-                  <label class="form-check">
-                      <input
-                          class="form-check-input"
-                          type="radio"
-                          value="True"  
-                          name="radioYesNo"                                                     
-                          for=""/>
-                      <span class="form-check-label">
-                          Yes
-                      </span>
-                  </label>
-                  <label class="form-check">
-                      <input
-                          class="form-check-input"
-                          type="radio"
-                          value="False"
-                          name="radioYesNo" 
-                          for="" />
-                      <span class="form-check-label">
-                          No
-                      </span>
-                  </label>                                                
-              </div>
-          </div>
-
-          <!-- 4 -->
-          <div class="col-md-12 mt-3">
-            <label for="" class="form-label fs-5">Project Costs</label>
-            <input type="number" class="form-control" id="" min="0" placeholder="R0,00">
-          </div>
-
-          <!-- 8 -->
-          <div class="col-md-12 mt-3">
-            <label for="" class="form-label fs-5  ">Budget Breakdown</label>
-            <textarea type="text" col="3" row="3" class="form-control" id="" placeholder="Budget Breakdown"></textarea>
-          </div>
-
-          <div class="col-md-12 mt-3">
-           
-              <div class="col-md-12">
-                 
-                  <div class="col-md-10" id="budgetBreakdown">
-                    <label for="" class="form-label">Upload Budget Breakdown (Excel)</label>
-                    <input class="form-control" type="file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" id="formFile">
-                  </div>
-                  
-              </div>
-
-          </div>
           
-          <!-- 5 -->
-          <div class="col-md-12 mt-3">
-            <label for="" class="form-label fs-5">Project Scope</label>
-            <textarea type="text" col="3" row="5" class="form-control" id="" placeholder="Project Scope"></textarea>
-          </div>
+          <h5 for="" style="color: #A71930;margin-top:0;padding-top:0;" class="mb-3">Project Details</h5>
+          <!-- 0 -->
+          
+            <div class="mt-2 mb-3">
+              <label for="" class="form-label fs-5  ">Project title</label>          
+              <div class="row side_c">
+                <div class="col-md-12">
+                  <input type="text" class="form-control" placeholder="Project title" id="">
+                </div>
+              </div>   
+            </div>     
+         
+          
+          <!-- 3 -->
+          <div class="mt-2 mb-3">
+            <label for="" class="form-label fs-5">Intended Beneficiaries</label>
+            <div class="row side_c">
+              <div class="col-md-12">
+                  <textarea type="text" col="3" row="3" class="form-control" id="" placeholder="Intended Beneficiaries"></textarea>              
+              </div>
+            </div> 
+          </div>        
+       
 
           <!-- 6 -->
-          <div class="col-md-12 mt-3">
-            <label for="" class="form-label fs-5  ">Project Objectives</label>
-            <textarea col="3" row="5" type="text" class="form-control" id="" placeholder="Project Objectives"></textarea>
-          </div>
+          <div class="mt-2 mb-3">
+            <label for="" class="form-label fs-5  ">Project Objectives</label>         
+            <div class="row side_c">
+              <div class="col-md-12 mt-3">              
+                <textarea col="3" row="5" type="text" class="form-control" id="" placeholder="Project Objectives"></textarea>
+              </div>
+            </div>  
+          </div>     
 
+           <!-- 5 -->
+          <div>
+            <label for="" class="form-label fs-5">Project Scope</label>           
+            <div class="row side_c">
+              <div class="col-md-12 mt-3">
+                <textarea type="text" col="3" row="5" class="form-control" id="" placeholder="Project Scope"></textarea>
+              </div>
+            </div>   
+          </div>     
+          
           <!--  -->
           <div class="col-md-12 mt-3">
-            <label for="" class="form-label fs-5 ">Project Date</label>
-            <div class="container">            
-              <div class="row">
-                <div class="col-md-6">
-                  <label for="" class="form-label">Start Date</label>
-                  <input type="date" class="form-control" id="">
+                <label for="" class="form-label fs-5 ">Project Date</label>
+              
+                <div class="row side_c">
+                  <div class="col-md-6">
+                    <label for="" class="form-label">Start Date</label>
+                    <input type="date" class="form-control" id="">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="" class="form-label">End Date</label>
+                    <input type="date" class="form-control" id="">
+                  </div>
                 </div>
-                <div class="col-md-6">
-                  <label for="" class="form-label">End Date</label>
-                  <input type="date" class="form-control" id="">
-                </div>
+           
+          </div>
+         
+      </div>
+
+      <!-- Funding -->
+      <div style="border:1px solid lightgrey;padding: 15px;border-radius: 12px;border-top: 0px;margin-top:10px;">
+
+            <h5 for="" style="color: #A71930;margin-top:0;padding-top:0;" class="mb-2">Funding Details</h5>
+
+            <!-- 1 -->        
+            <label for="" class="form-label fs-5  ">Was funding received for other projects</label>
+            <div class="row side_c">
+              <div class="col-md-12 mt-1">              
+                  <div>
+                      <label class="form-check">
+                          <input
+                              class="form-check-input"
+                              type="radio"
+                              value="True"  
+                              name="radioYesNo"                                                     
+                              for=""/>
+                          <span class="form-check-label">
+                              Yes
+                          </span>
+                      </label>
+                      <label class="form-check">
+                          <input
+                              class="form-check-input"
+                              type="radio"
+                              value="False"
+                              name="radioYesNo" 
+                              for="" />
+                          <span class="form-check-label">
+                              No
+                          </span>
+                      </label>                                                
+                  </div>
               </div>
+            </div>        
+          
+            <!-- 4 -->           
+            <label for="" class="form-label fs-5">Project Costs</label>
+            <div class="row side_c">
+              <div class="col-md-12 mt-3">
+                <input type="number" class="form-control" id="" min="0" placeholder="R0,00">
+              </div>
+            </div>            
 
+            <!-- 8 -->   
+            <label for="" class="form-label fs-5  ">Budget Breakdown</label>
+            <div class="row side_c">
+              <div class="col-md-12 mt-3">
+                <textarea type="text" col="3" row="3" class="form-control" id="" placeholder="Budget Breakdown"></textarea>
+              </div>
             </div>
-          </div>
 
-          <div class="col-md-12 mt-3" id="">
+            <label for="" class="form-label">Upload Budget Breakdown (Excel)</label>     
+            <div class="row side_c">
+              <div class="col-md-12 mt-1">           
+                  <div class="col-md-12">                 
+                      <div class="col-md-12 center_c" style="margin:0;float:none;" id="budgetBreakdown">
+                        <input class="form-control" type="file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" id="formFile">
+                      </div>                  
+                  </div>
+              </div>
+            </div>        
+                            
             <label for="" class="form-label fs-5">Additional Attachments</label>
-            <input class="form-control" type="file" accept="application/pdf" id="formFile2">
-          </div>
+            <div class="row side_c">
+              <div class="col-md-12 mt-3" id="">                
+                <input class="form-control" type="file" accept="application/pdf" id="formFile2">
+              </div>
+            </div>
+           
+            <div class="row side_c">
+                <div class="col-md-12 mt-3">               
+                  <button class="btn btn-md btn-primary my-2" style="background-color:#0F204B;" type="submit">Submit</button>
+                  <button class="btn btn-md btn-danger mx-3 my-2" style="background-color:#A71930;" type="submit">Cancel</button>
+                </div>
+            </div>
 
-          <div class="col-md-12 mt-3">
-            <button class="btn btn-md btn-primary my-2" style="background-color:#0F204B;" type="submit">Submit</button>
-            <button class="btn btn-md btn-danger mx-3 my-2" style="background-color:#A71930;" type="submit">Cancel</button>
-          </div>
       </div>
 
     </form>
+
+    <form asp-action="AddToCart" id="frmAddImage" asp-controller="Cart" method="post" enctype="multipart/form-data" class="align-middle">
+
+
+        <div class="row mt-3" >
+
+            <label for="" class="form-label">Project Members</label>                   
+
+            <div class="mb-1">
+              <a class="btn btn-sm btn-primary" href="JavaScript:void(0)" onclick="toggleNewMember()" id="addMember" style="background-color:#0F204B;">
+                  <i class="~/icons/System/add-fill.svg"></i>
+                  Add Project Member
+              </a>
+            </div>
+
+            <!-- Form - Member -->
+            <div class="row justify-content-between flex-row mt-2" id="newMember"> 
+              <div class="col-auto">
+                <label for="" class="form-label">First Name:</label>
+                <input type="text" class="form-control" asp-for="@Model.FundingViewModel.FirstName" placeholder="First Name" id="">
+              </div>
+              <div class="col-auto">
+                <label for="" class="form-label">Last Name:</label>
+                <input type="text" class="form-control" asp-for="@Model.FundingViewModel.LastName" placeholder="Last Name" id="">
+              </div>
+              <div class="mb-1" type="submit">
+                  <button class="btn btn-sm btn-primary" style="background-color:#0F204B;" type="submit">Save Member</button>
+              </div>
+              
+            </div>
+            
+          
+          </div>
+
+    </form>
+
 </div>
 
 <script type="text/javascript">
   
-     $('#excelUpload').click(function() {   
+    //  $('#newMember').click(function() {   
                     
-          $('#budgetBreakdown').toggle();
+    //       $('#addMember').toggle();
+    //        console.log('clicked on'+ document.getElementbyId('newMember'));
 
-      });   
+    //   }); 
+    
+   function toggleNewMember() {
+      var newMemberDiv = document.getElementById("newMember");
+      if (newMemberDiv.style.display === "none") {
+        newMemberDiv.style.display = "block"; // Show the element
+      } else {
+        newMemberDiv.style.display = "none"; // Hide the element
+      }
+    }
+     
 
 </script>
